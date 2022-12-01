@@ -65,7 +65,7 @@ checkCredentials = () => {
       console.log("U still here, " + storedUsername);
       loggaInForm.classList.add("form--hidden");
 
-      //JAKOB: varför removar du "formtask här?" (det läggs också till ett "," när man uppdaterar sidan gentemot att logga in?)
+      //JAKOB: (det läggs till ett "," när man uppdaterar sidan gentemot när man loggar in?)
       formTask.classList.remove("form--hidden");
       signOutButton.classList.remove("form--hidden");
       formTask.innerHTML = "Welcome, " + storedUsername;
