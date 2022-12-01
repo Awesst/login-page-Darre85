@@ -10,10 +10,14 @@
     <title>User Portal</title>
     <script src="script.js" defer></script>
 </head>
+
+//JAKOB: är det inte bättre att kalla på funktionen i JS? "(checkCredentials)""
 <body class="checking" onload="checkCredentials()">
 
     <div class ="meny">
         <ul>
+
+            //JAKOB: " kan tas bort. en för mycket :)
             <li style="float:right"><a class="signoutButton form--hidden" id="signOutButton" style="font-weight: bold;"" href="";>Sign out</a></li>
           </ul>
     </div>
@@ -24,12 +28,16 @@
             <div class="formMessage errorMessage"></div>
             <div class="formInputGroup">
                 <input type="text" class="formInput" id="username" autofocus placeholder="Username or email">
+
+                //JAKOB: behövs denna diven verkligen? vad har den för nytta?
                 <div class="formInputError"></div>
             </div>
             <div class="formInputGroup">
                 <input type="password" class="formInput" id="password" autofocus placeholder="Password">
                 <div class="formInputError form--hidden" id="invalid">Invalid username/password combination</div>
             </div>
+
+            //JAKOB: är det inte bättre att använda sig av en "addEventListener" i JS?
             <button class="formBtn" type="submit" onClick="loggingIn()">Continue</button>
            </form>
     <div class = "form--hidden" id="formTask">
@@ -45,6 +53,8 @@
             <i class="fa-solid fa-envelope"></i>
             förvirradsjäl@example.com</a>
         <br><br>
+
+        //JAKOB: "a" elementet blir inte kopplat till något. använda sig av "p" elementet istället?
         <a style="font-weight:light"> <i class="fa-solid fa-phone"></i>
              +46701 213 123BT
         </a>
