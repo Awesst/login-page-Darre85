@@ -1,6 +1,6 @@
 //------------constanter---------------------//
 
-//bra jobbat med dem globala variablerna som återanvänds i din kod!
+//JAKOB: bra jobbat med dem globala variablerna som återanvänds i din kod!
 const username = document.getElementById("username");
 const password = document.getElementById("password");
 const welcome = document.getElementById("welcome");
